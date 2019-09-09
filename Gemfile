@@ -12,6 +12,7 @@ gem "interactor-rails"
 gem "kaminari"
 gem "oj", "~> 3"
 gem "puma", "~> 3.11"
+gem "apitome"
 
 group :development, :test do
   gem "rspec_api_documentation"

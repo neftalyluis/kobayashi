@@ -96,3 +96,14 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+
+require "rspec_api_documentation"
+require "rspec_api_documentation/dsl"
+
+RspecApiDocumentation.configure do |config|
+  config.format = :json
+  config.curl_host = "https://kobayashi-hr.herokuapp.com/"
+  config.api_name = "Example App API"
+  config.api_explanation = "API Example Description"
+end

@@ -1,0 +1,65 @@
+{
+  "resources": [
+    {
+      "name": "Attendances",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Gets the attendances for today",
+          "link": "attendances/gets_the_attendances_for_today.json",
+          "groups": "all",
+          "route": "/attendances/",
+          "method": "get"
+        },
+        {
+          "description": "Marks an attendance for today",
+          "link": "attendances/marks_an_attendance_for_today.json",
+          "groups": "all",
+          "route": "/attendances/",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "General information for Employees",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Creates a new employee",
+          "link": "general_information_for_employees/creates_a_new_employee.json",
+          "groups": "all",
+          "route": "/employees/",
+          "method": "post"
+        },
+        {
+          "description": "Removes the employee data",
+          "link": "general_information_for_employees/removes_the_employee_data.json",
+          "groups": "all",
+          "route": "/employees/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Returns all the employees on the company",
+          "link": "general_information_for_employees/returns_all_the_employees_on_the_company.json",
+          "groups": "all",
+          "route": "/employees/",
+          "method": "get"
+        },
+        {
+          "description": "Shows the detail of an employee",
+          "link": "general_information_for_employees/shows_the_detail_of_an_employee.json",
+          "groups": "all",
+          "route": "/employees/:id",
+          "method": "get"
+        },
+        {
+          "description": "Updates the employee data",
+          "link": "general_information_for_employees/updates_the_employee_data.json",
+          "groups": "all",
+          "route": "/employees/:id",
+          "method": "put"
+        }
+      ]
+    }
+  ]
+}
