@@ -1,6 +1,12 @@
 language: ruby
 script:
-  — bundle install — jobs=3 — retry=3
-  — bundle exec rake db:create
-  — bundle exec rake db:migrate
-  — bundle exec rspec
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rspec
+services:
+- postgresql
+deploy:
+  provider: heroku
+  app: kobayashi-hr
+  api_key:
+    secure: 0gZBHn0NknLE7ohfriokG94tBxN64W9R/Fdmuz6E5Ec3wF5mgyF2e/hKe2iY2UoqtyaHIN41+PKSazyAXrhoXj+C5NtYDim9NPMwdUkitzV7JEa+lM9H4I1QKg9PMsllwDRZv1epb+wUbcx8owRjJzQqemkd/vnI2kUThsugpbYr06x0PNBXdXZPfaC9tO5jP/yG1CbuFEqd2XSWAl0IOQjCGGUKWnpmN7YTJwe3u4Q8OPCgbqI1iCDfzt4ptB9ts14lziNQtkc3VO7qyB8nHmA4JVXMDHaLrUVKOe/i984cWc+7DhUrRs1O95FXsHny46wPdklfzZwSS/DAu66K4Nvr1hBTrcgkkBCM6CizUoGjYDp0rcetjbOseVwuZEwljuldi/V2phF4uRKNgz4VbFWeP6+9q7VJwGkcFxMGQQ9VbE26FeRubofzKeMjQdug3g+Ian3HMUBK1hWCEG8ulnGlDT/c7cw/n7bHW2yFeVqONZJc+kobfcUIIWaY7x61FewM2sGyU2Ej4KVuz/27rw2UqNxkYDa/WlHHku1gIKC4QB6MjGqH/yqb4eafgnA5DQhxmtmTsRpfg4GcV2yS+vppeWH2QXHsGQtoukyJ1EtyknrE6jiQ0n37MopdRDejO9qsWnFYIYVTE1L9jLfpXiANAwqtkbvevvl2NjiwPeM=
