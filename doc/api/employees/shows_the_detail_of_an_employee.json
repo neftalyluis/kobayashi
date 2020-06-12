@@ -27,14 +27,20 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"employee\": {\n    \"id\": 26,\n    \"first_name\": \"Danuta\",\n    \"last_name\": \"Weber\",\n    \"position\": \"coach\",\n    \"date_of_birth\": \"1958-05-16\",\n    \"employment_date\": \"2019-07-28\",\n    \"created_at\": \"2020-06-12T20:10:03.849Z\",\n    \"updated_at\": \"2020-06-12T20:10:03.849Z\"\n  }\n}",
+      "response_body": "[binary data]",
       "response_headers": {
+  "X-Frame-Options": "SAMEORIGIN",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Content-Type-Options": "nosniff",
+  "X-Download-Options": "noopen",
+  "X-Permitted-Cross-Domain-Policies": "none",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"872b58f446d5b70e84cb8caca7a5e9be\"",
+  "ETag": "W/\"ad4d64061392a03598fed0e2fd6383b5\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "1f24e9e1-38ce-4d7c-8660-c750df67cf7d",
-  "X-Runtime": "0.005901",
-  "Content-Length": "223"
+  "X-Request-Id": "3dba4e87-ffb4-492e-ba14-4f55489e3e84",
+  "X-Runtime": "0.005412",
+  "Content-Length": "239"
 },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/employees/26\" -X GET \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

@@ -24,7 +24,6 @@ class ApplicationController < ActionController::API
   def not_found
     response_error(code: 404, message: "Resource not found.")
   end
-=begin
 
   def forbidden
     message = "You don't have enough permissions for this action"
@@ -39,5 +38,4 @@ class ApplicationController < ActionController::API
         error: opts[:message]
     }
   end
-=end
 end

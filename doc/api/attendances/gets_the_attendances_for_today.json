@@ -22,9 +22,15 @@
       "response_status_text": "No Content",
       "response_body": null,
       "response_headers": {
+  "X-Frame-Options": "SAMEORIGIN",
+  "X-XSS-Protection": "1; mode=block",
+  "X-Content-Type-Options": "nosniff",
+  "X-Download-Options": "noopen",
+  "X-Permitted-Cross-Domain-Policies": "none",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
   "Cache-Control": "no-cache",
-  "X-Request-Id": "e8e6a6cc-3b4f-48e6-b881-90f931d21d6f",
-  "X-Runtime": "0.009497"
+  "X-Request-Id": "2219bdec-449a-423f-b7b6-ba4d71f11f1f",
+  "X-Runtime": "0.038581"
 },
       "response_content_type": null,
       "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/attendances/\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
