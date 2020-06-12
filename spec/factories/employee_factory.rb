@@ -6,6 +6,6 @@ FactoryBot.define do
     last_name { Faker::Name.last_name }
     position { Faker::Company.profession }
     date_of_birth { Faker::Date.birthday }
-    employment_date { Faker::Date.backward(days: 1.year.ago.days) }
+    employment_date { Faker::Date.backward(days: 365) }
   end
 end

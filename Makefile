@@ -48,3 +48,6 @@ rubocop-fix: ## [ci] Runs rubocop with auto-fix
 
 brakeman:  ## [security] Run brakeman
 	bundle exec brakeman -o output.html
+
+apidocs: ## [documentation] Runs the tests and creates the API documentation on docs/
+	bundle exec rake docs:generate

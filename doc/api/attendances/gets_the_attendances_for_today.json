@@ -23,11 +23,11 @@
       "response_body": null,
       "response_headers": {
   "Cache-Control": "no-cache",
-  "X-Request-Id": "6465b976-4e22-48cc-9d4b-d446f7ad3ce4",
-  "X-Runtime": "0.008476"
+  "X-Request-Id": "e8e6a6cc-3b4f-48e6-b881-90f931d21d6f",
+  "X-Runtime": "0.009497"
 },
       "response_content_type": null,
-      "curl": "curl -g \"https://kobayashi-hr.herokuapp.com//attendances/\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/attendances/\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

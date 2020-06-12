@@ -21,40 +21,40 @@
       ]
     },
     {
-      "name": "General information for Employees",
-      "explanation": null,
+      "name": "Employees",
+      "explanation": "General information for Employees",
       "examples": [
         {
           "description": "Creates a new employee",
-          "link": "general_information_for_employees/creates_a_new_employee.json",
+          "link": "employees/creates_a_new_employee.json",
           "groups": "all",
-          "route": "/employees/",
+          "route": "/employees",
           "method": "post"
         },
         {
-          "description": "Removes the employee data",
-          "link": "general_information_for_employees/removes_the_employee_data.json",
+          "description": "Removes an employee data",
+          "link": "employees/removes_an_employee_data.json",
           "groups": "all",
           "route": "/employees/:id",
           "method": "delete"
         },
         {
           "description": "Returns all the employees on the company",
-          "link": "general_information_for_employees/returns_all_the_employees_on_the_company.json",
+          "link": "employees/returns_all_the_employees_on_the_company.json",
           "groups": "all",
-          "route": "/employees/",
+          "route": "/employees",
           "method": "get"
         },
         {
           "description": "Shows the detail of an employee",
-          "link": "general_information_for_employees/shows_the_detail_of_an_employee.json",
+          "link": "employees/shows_the_detail_of_an_employee.json",
           "groups": "all",
           "route": "/employees/:id",
           "method": "get"
         },
         {
           "description": "Updates the employee data",
-          "link": "general_information_for_employees/updates_the_employee_data.json",
+          "link": "employees/updates_the_employee_data.json",
           "groups": "all",
           "route": "/employees/:id",
           "method": "put"

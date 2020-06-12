@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_09_014200) do
+ActiveRecord::Schema.define(version: 2019_09_09_045249) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attendances", force: :cascade do |t|
+    t.bigint "employee_id"
+    t.date "work_date"
+    t.datetime "check_in"
+    t.datetime "check_out"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["employee_id", "work_date"], name: "index_attendances_on_employee_id_and_work_date", unique: true
+    t.index ["employee_id"], name: "index_attendances_on_employee_id"
+  end
 
   create_table "employees", force: :cascade do |t|
     t.string "first_name"

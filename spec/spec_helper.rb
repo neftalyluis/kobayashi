@@ -103,7 +103,7 @@ require "rspec_api_documentation/dsl"
 
 RspecApiDocumentation.configure do |config|
   config.format = :json
-  config.curl_host = "https://kobayashi-hr.herokuapp.com/"
-  config.api_name = "Example App API"
-  config.api_explanation = "API Example Description"
+  config.curl_host = "https://kobayashi-hr.herokuapp.com"
+  config.api_name = "Kobayashi API"
+  config.api_explanation = "A simple HR REST API to check employees and attendances"
 end

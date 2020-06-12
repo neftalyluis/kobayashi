@@ -1,0 +1,43 @@
+{
+  "resource": "Employees",
+  "resource_explanation": "General information for Employees",
+  "http_method": "GET",
+  "route": "/employees/:id",
+  "description": "Shows the detail of an employee",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "The ID of the employee"
+    }
+  ],
+  "response_fields": [],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/employees/26",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {},
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"employee\": {\n    \"id\": 26,\n    \"first_name\": \"Danuta\",\n    \"last_name\": \"Weber\",\n    \"position\": \"coach\",\n    \"date_of_birth\": \"1958-05-16\",\n    \"employment_date\": \"2019-07-28\",\n    \"created_at\": \"2020-06-12T20:10:03.849Z\",\n    \"updated_at\": \"2020-06-12T20:10:03.849Z\"\n  }\n}",
+      "response_headers": {
+  "Content-Type": "application/json; charset=utf-8",
+  "ETag": "W/\"872b58f446d5b70e84cb8caca7a5e9be\"",
+  "Cache-Control": "max-age=0, private, must-revalidate",
+  "X-Request-Id": "1f24e9e1-38ce-4d7c-8660-c750df67cf7d",
+  "X-Runtime": "0.005901",
+  "Content-Length": "223"
+},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/employees/26\" -X GET \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}
