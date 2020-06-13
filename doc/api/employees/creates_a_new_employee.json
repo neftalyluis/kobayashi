@@ -42,7 +42,7 @@
     {
       "request_method": "POST",
       "request_path": "/employees",
-      "request_body": "{\"employee\":{\"first_name\":\"Sharilyn\",\"last_name\":\"Johnston\",\"position\":\"librarian\",\"date_of_birth\":\"1972-10-25\",\"employment_date\":\"2020-01-23\"}}",
+      "request_body": "{\"employee\":{\"first_name\":\"Theresia\",\"last_name\":\"Stokes\",\"position\":\"photographer\",\"date_of_birth\":\"1975-05-24\",\"employment_date\":\"2020-06-03\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -61,14 +61,14 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"9fe7debff4d727fae4f5201b1789c71a\"",
+  "ETag": "W/\"a0c674d05d2093bd27fe4a8925d53130\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "2e69216f-5b1a-4af3-8bed-bcef9a05c77c",
-  "X-Runtime": "0.007597",
-  "Content-Length": "232"
+  "X-Request-Id": "59247788-ade5-44a6-991a-56d4aed8ad42",
+  "X-Runtime": "0.009883",
+  "Content-Length": "233"
 },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees\" -d '{\"employee\":{\"first_name\":\"Sharilyn\",\"last_name\":\"Johnston\",\"position\":\"librarian\",\"date_of_birth\":\"1972-10-25\",\"employment_date\":\"2020-01-23\"}}' -X POST \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees\" -d '{\"employee\":{\"first_name\":\"Theresia\",\"last_name\":\"Stokes\",\"position\":\"photographer\",\"date_of_birth\":\"1975-05-24\",\"employment_date\":\"2020-06-03\"}}' -X POST \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/jejacks0n/apitome.git
+  revision: 5b856800e746b21fcfc57bbe75cfffc71f11df50
+  ref: 5b85680
+  specs:
+    apitome (0.3.0)
+      kramdown
+      railties
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -56,9 +65,6 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    apitome (0.3.0)
-      kramdown
-      railties
     ast (2.4.1)
     awesome_print (1.8.0)
     bindex (0.8.1)
@@ -108,7 +114,8 @@ GEM
       activerecord
       kaminari-core (= 1.2.1)
     kaminari-core (1.2.1)
-    kramdown (2.1.0)
+    kramdown (2.2.1)
+      rexml
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -260,7 +267,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  apitome
+  apitome!
   awesome_print
   bootsnap (>= 1.1.0)
   brakeman

@@ -12,7 +12,7 @@ gem "interactor-rails"
 gem "kaminari"
 gem "oj", "~> 3"
 gem "puma", "~> 4.3"
-gem "apitome"
+gem "apitome", github: "jejacks0n/apitome", ref: "5b85680"
 
 group :development, :test do
   gem "rspec_api_documentation"

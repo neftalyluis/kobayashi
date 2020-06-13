@@ -52,7 +52,7 @@
     {
       "request_method": "PUT",
       "request_path": "/employees/28",
-      "request_body": "{\"employee\":{\"first_name\":\"Laurie\",\"last_name\":\"Upton\",\"position\":\"pharmacist\",\"date_of_birth\":\"1976-11-12\",\"employment_date\":\"2019-07-24\"}}",
+      "request_body": "{\"employee\":{\"first_name\":\"Andrew\",\"last_name\":\"Jacobs\",\"position\":\"police officer\",\"date_of_birth\":\"1972-05-30\",\"employment_date\":\"2020-06-02\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -71,14 +71,14 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"f6946d9b89d7ad9621d34e5bb87d3ce5\"",
+  "ETag": "W/\"8c597a3938599ce4a0f24219a864afa4\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "b7ad1967-e6f4-4809-b2d0-077818a53144",
-  "X-Runtime": "0.016674",
-  "Content-Length": "228"
+  "X-Request-Id": "fac5c619-d5ed-4442-aa78-7947d906edbf",
+  "X-Runtime": "0.014149",
+  "Content-Length": "233"
 },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees/28\" -d '{\"employee\":{\"first_name\":\"Laurie\",\"last_name\":\"Upton\",\"position\":\"pharmacist\",\"date_of_birth\":\"1976-11-12\",\"employment_date\":\"2019-07-24\"}}' -X PUT \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees/28\" -d '{\"employee\":{\"first_name\":\"Andrew\",\"last_name\":\"Jacobs\",\"position\":\"police officer\",\"date_of_birth\":\"1972-05-30\",\"employment_date\":\"2020-06-02\"}}' -X PUT \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

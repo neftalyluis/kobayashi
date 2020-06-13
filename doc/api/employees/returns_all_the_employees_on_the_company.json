@@ -30,11 +30,11 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"a005ace42b521a8b827bf5f6c5629420\"",
+  "ETag": "W/\"e4bc5783313aed095de49d90ded3b0a6\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "af77c236-7297-42fd-9f61-71dc29270808",
-  "X-Runtime": "0.017133",
-  "Content-Length": "5448"
+  "X-Request-Id": "82fe9d14-678e-437d-8885-f4fd857e0c3d",
+  "X-Runtime": "0.012158",
+  "Content-Length": "5402"
 },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/employees\" -X GET \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

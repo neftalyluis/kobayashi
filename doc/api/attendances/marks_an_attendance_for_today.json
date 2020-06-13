@@ -30,8 +30,8 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Cache-Control": "no-cache",
-  "X-Request-Id": "ad6194b7-364b-49bc-9560-540e72c6b37e",
-  "X-Runtime": "0.008127"
+  "X-Request-Id": "61aa3e04-c4de-410b-bc18-12aee8ddb5dc",
+  "X-Runtime": "0.006714"
 },
       "response_content_type": null,
       "curl": "curl \"https://kobayashi-hr.herokuapp.com/attendances/\" -d '' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
