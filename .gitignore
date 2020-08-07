@@ -26,6 +26,9 @@
 # Ignore .env file 
 .env
 
+.generators
+.rakeTasks
+
 # Ignore Coverage files 
 /coverage
 

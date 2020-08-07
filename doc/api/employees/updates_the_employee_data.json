@@ -52,7 +52,7 @@
     {
       "request_method": "PUT",
       "request_path": "/employees/28",
-      "request_body": "{\"employee\":{\"first_name\":\"Andrew\",\"last_name\":\"Jacobs\",\"position\":\"police officer\",\"date_of_birth\":\"1972-05-30\",\"employment_date\":\"2020-06-02\"}}",
+      "request_body": "{\"employee\":{\"first_name\":\"Richard\",\"last_name\":\"Macejkovic\",\"position\":\"scientist\",\"date_of_birth\":\"1999-11-29\",\"employment_date\":\"2020-05-09\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -62,7 +62,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[binary data]",
+      "response_body": "{\n  \"employee\": {\n    \"id\": 28,\n    \"first_name\": \"Richard\",\n    \"last_name\": \"Macejkovic\",\n    \"position\": \"scientist\",\n    \"date_of_birth\": \"1999-11-29\",\n    \"employment_date\": \"2020-05-09\",\n    \"created_at\": \"2020-08-07T03:17:06.343Z\",\n    \"updated_at\": \"2020-08-07T03:17:06.348Z\"\n  }\n}",
       "response_headers": {
   "X-Frame-Options": "SAMEORIGIN",
   "X-XSS-Protection": "1; mode=block",
@@ -71,14 +71,14 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"8c597a3938599ce4a0f24219a864afa4\"",
+  "ETag": "W/\"33e4018cbf7db9a992c573fac15338b0\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "fac5c619-d5ed-4442-aa78-7947d906edbf",
-  "X-Runtime": "0.014149",
+  "X-Request-Id": "7f653caa-32c4-476b-bf46-5cba360f9304",
+  "X-Runtime": "0.017016",
   "Content-Length": "233"
 },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees/28\" -d '{\"employee\":{\"first_name\":\"Andrew\",\"last_name\":\"Jacobs\",\"position\":\"police officer\",\"date_of_birth\":\"1972-05-30\",\"employment_date\":\"2020-06-02\"}}' -X PUT \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees/28\" -d '{\"employee\":{\"first_name\":\"Richard\",\"last_name\":\"Macejkovic\",\"position\":\"scientist\",\"date_of_birth\":\"1999-11-29\",\"employment_date\":\"2020-05-09\"}}' -X PUT \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

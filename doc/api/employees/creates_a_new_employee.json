@@ -42,7 +42,7 @@
     {
       "request_method": "POST",
       "request_path": "/employees",
-      "request_body": "{\"employee\":{\"first_name\":\"Theresia\",\"last_name\":\"Stokes\",\"position\":\"photographer\",\"date_of_birth\":\"1975-05-24\",\"employment_date\":\"2020-06-03\"}}",
+      "request_body": "{\"employee\":{\"first_name\":\"Daryl\",\"last_name\":\"Botsford\",\"position\":\"attorney at law\",\"date_of_birth\":\"1990-06-14\",\"employment_date\":\"2020-05-09\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -52,7 +52,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "[binary data]",
+      "response_body": "{\n  \"employee\": {\n    \"id\": 27,\n    \"first_name\": \"Daryl\",\n    \"last_name\": \"Botsford\",\n    \"position\": \"attorney at law\",\n    \"date_of_birth\": \"1990-06-14\",\n    \"employment_date\": \"2020-05-09\",\n    \"created_at\": \"2020-08-07T03:17:06.336Z\",\n    \"updated_at\": \"2020-08-07T03:17:06.336Z\"\n  }\n}",
       "response_headers": {
   "X-Frame-Options": "SAMEORIGIN",
   "X-XSS-Protection": "1; mode=block",
@@ -61,14 +61,14 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"a0c674d05d2093bd27fe4a8925d53130\"",
+  "ETag": "W/\"6b31127298690d31847b03d3aa9b61ee\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "59247788-ade5-44a6-991a-56d4aed8ad42",
-  "X-Runtime": "0.009883",
-  "Content-Length": "233"
+  "X-Request-Id": "7a23374e-7ba2-48c7-91ee-b61fedc6524a",
+  "X-Runtime": "0.005124",
+  "Content-Length": "235"
 },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees\" -d '{\"employee\":{\"first_name\":\"Theresia\",\"last_name\":\"Stokes\",\"position\":\"photographer\",\"date_of_birth\":\"1975-05-24\",\"employment_date\":\"2020-06-03\"}}' -X POST \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees\" -d '{\"employee\":{\"first_name\":\"Daryl\",\"last_name\":\"Botsford\",\"position\":\"attorney at law\",\"date_of_birth\":\"1990-06-14\",\"employment_date\":\"2020-05-09\"}}' -X POST \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

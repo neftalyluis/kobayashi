@@ -12,7 +12,10 @@ gem "interactor-rails"
 gem "kaminari"
 gem "oj", "~> 3"
 gem "puma", "~> 4.3"
-gem "apitome", github: "jejacks0n/apitome", ref: "5b85680"
+# The rack version can't be upgraded before rspec_api_documentation fixes this
+# https://github.com/rack/rack/pull/1486
+gem "rack", "~> 2.0.8"
+gem "apitome"
 
 group :development, :test do
   gem "rspec_api_documentation"
