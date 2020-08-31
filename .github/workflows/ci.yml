@@ -1,11 +1,4 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
-# For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
-
-name: Ruby
+name: CI
 
 on:
   push:
@@ -15,37 +8,27 @@ on:
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
     services:
-      # Label used to access the service container
       postgres:
-        # Docker Hub image
         image: postgres
-        # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
-          --health-interval 60s
-          --health-timeout 30s
-          --health-retries 30
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
         ports:
-          # Maps tcp port 5432 on service container to the host
           - 5432:5432
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
-    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
-    # change this to (see https://github.com/ruby/setup-ruby#versioning):
-    # uses: ruby/setup-ruby@v1
       uses: ruby/setup-ruby@v1
       with:
+        bundler-cache: true
         ruby-version: 2.7.1
     - name: Install dependencies
       run: bundle install
     - name: Setup database
-      env:
-        RAILS_ENV: test
       run: bundle exec rake db:setup
     - name: Run tests
       run: bundle exec rspec
