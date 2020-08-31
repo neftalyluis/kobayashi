@@ -2,7 +2,7 @@
   "resource": "Employees",
   "resource_explanation": "General information for Employees",
   "http_method": "GET",
-  "route": "/employees/:id",
+  "route": "/admin/employees/:id",
   "description": "Shows the detail of an employee",
   "explanation": null,
   "parameters": [
@@ -16,7 +16,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/employees/26",
+      "request_path": "/admin/employees/26",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -27,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"employee\":{\"id\":26,\"first_name\":\"Masako\",\"last_name\":\"Kemmer\",\"position\":\"accountant\",\"date_of_birth\":\"1969-02-26\",\"employment_date\":\"2019-11-16\",\"created_at\":\"2020-08-31T03:00:40.948Z\",\"updated_at\":\"2020-08-31T03:00:40.948Z\"}}",
+      "response_body": "{\"employee\":{\"id\":26,\"first_name\":\"Ingeborg\",\"last_name\":\"Runolfsdottir\",\"position\":\"chef\",\"date_of_birth\":\"1982-11-14\",\"employment_date\":\"2019-09-17\",\"created_at\":\"2020-08-31T04:52:59.943Z\",\"updated_at\":\"2020-08-31T04:52:59.943Z\"}}",
       "response_headers": {
   "X-Frame-Options": "SAMEORIGIN",
   "X-XSS-Protection": "1; mode=block",
@@ -36,14 +36,14 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"83d65399e778659d5078144be23e1b42\"",
+  "ETag": "W/\"fc89121d418af9512282cea3b93ee7a1\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "85aae30b-13b8-42fa-8aac-69294741370c",
-  "X-Runtime": "0.002038",
-  "Content-Length": "229"
+  "X-Request-Id": "219799a6-6d03-4091-b560-99ac856d8cc5",
+  "X-Runtime": "0.003382",
+  "Content-Length": "232"
 },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/employees/26\" -X GET \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/admin/employees/26\" -X GET \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

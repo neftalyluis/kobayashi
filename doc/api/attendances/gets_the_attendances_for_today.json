@@ -2,7 +2,7 @@
   "resource": "Attendances",
   "resource_explanation": null,
   "http_method": "GET",
-  "route": "/attendances/",
+  "route": "/admin/attendances/",
   "description": "Gets the attendances for today",
   "explanation": null,
   "parameters": [],
@@ -10,7 +10,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/attendances/",
+      "request_path": "/admin/attendances/",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -29,11 +29,11 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Cache-Control": "no-cache",
-  "X-Request-Id": "e0b4c801-b583-40f4-bcf7-bed8fcd72dae",
-  "X-Runtime": "0.004724"
+  "X-Request-Id": "031b5fe0-8955-48ba-b105-a57663af1aae",
+  "X-Runtime": "0.005785"
 },
       "response_content_type": null,
-      "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/attendances/\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/admin/attendances/\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

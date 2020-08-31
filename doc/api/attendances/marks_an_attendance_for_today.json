@@ -2,7 +2,7 @@
   "resource": "Attendances",
   "resource_explanation": null,
   "http_method": "POST",
-  "route": "/attendances/",
+  "route": "/admin/attendances/",
   "description": "Marks an attendance for today",
   "explanation": null,
   "parameters": [],
@@ -10,7 +10,7 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/attendances/",
+      "request_path": "/admin/attendances/",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -30,11 +30,11 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Cache-Control": "no-cache",
-  "X-Request-Id": "f402b892-b691-41f5-a68e-aec01206f81f",
-  "X-Runtime": "0.003765"
+  "X-Request-Id": "3494c464-d976-4e28-9601-9b56f7f7049c",
+  "X-Runtime": "0.003791"
 },
       "response_content_type": null,
-      "curl": "curl \"https://kobayashi-hr.herokuapp.com/attendances/\" -d '' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"https://kobayashi-hr.herokuapp.com/admin/attendances/\" -d '' -X POST \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

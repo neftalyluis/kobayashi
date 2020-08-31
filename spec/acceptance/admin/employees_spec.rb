@@ -9,7 +9,7 @@ resource "Employees" do
 
   let(:employee) { create(:employee) }
 
-  get "/employees" do
+  get "/admin/employees" do
     let!(:employees) { create_list(:employee, 25) }
 
     example "Returns all the employees on the company" do
@@ -18,7 +18,7 @@ resource "Employees" do
     end
   end
 
-  get "/employees/:id" do
+  get "/admin/employees/:id" do
     parameter :id, "The ID of the employee", required: true
     let(:id) { employee.id }
 
@@ -28,7 +28,7 @@ resource "Employees" do
     end
   end
 
-  post "/employees" do
+  post "/admin/employees" do
     parameter :first_name, "The first name of the employee", scope: :employee, required: true
     parameter :last_name, "The last name of the employee", scope: :employee, required: true
     parameter :position, "The position the employee occupies, e.g: Software Engineer", scope: :employee, required: true
@@ -49,7 +49,7 @@ resource "Employees" do
     end
   end
 
-  put "/employees/:id" do
+  put "/admin/employees/:id" do
     parameter :id, "The ID of the employee", required: true
     let(:id) { employee.id }
 
@@ -75,7 +75,7 @@ resource "Employees" do
     end
   end
 
-  delete "/employees/:id" do
+  delete "/admin/employees/:id" do
     parameter :id, "The ID of the employee", required: true
     let(:id) { employee.id }
 

@@ -2,7 +2,7 @@
   "resource": "Employees",
   "resource_explanation": "General information for Employees",
   "http_method": "DELETE",
-  "route": "/employees/:id",
+  "route": "/admin/employees/:id",
   "description": "Removes an employee data",
   "explanation": null,
   "parameters": [
@@ -16,7 +16,7 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/employees/29",
+      "request_path": "/admin/employees/29",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -36,11 +36,11 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Cache-Control": "no-cache",
-  "X-Request-Id": "0d2c71b1-e56c-4b1a-9763-acf8700045ae",
-  "X-Runtime": "0.002068"
+  "X-Request-Id": "6152d648-0d5f-4d69-9ee3-1c93d9c48d50",
+  "X-Runtime": "0.002286"
 },
       "response_content_type": null,
-      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees/29\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"https://kobayashi-hr.herokuapp.com/admin/employees/29\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

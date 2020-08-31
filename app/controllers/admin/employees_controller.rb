@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class EmployeesController < ApplicationController
+class Admin::EmployeesController < ApplicationController
   before_action :find_employee, except: %i[index create]
   before_action :find_employees, only: %i[index]
 
@@ -10,6 +10,14 @@ class EmployeesController < ApplicationController
 
   def show
     response_success(employee: @employee)
+  end
+
+  def check_in
+
+  end
+
+  def check_out
+
   end
 
   def create

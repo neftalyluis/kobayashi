@@ -8,14 +8,14 @@
           "description": "Gets the attendances for today",
           "link": "attendances/gets_the_attendances_for_today.json",
           "groups": "all",
-          "route": "/attendances/",
+          "route": "/admin/attendances/",
           "method": "get"
         },
         {
           "description": "Marks an attendance for today",
           "link": "attendances/marks_an_attendance_for_today.json",
           "groups": "all",
-          "route": "/attendances/",
+          "route": "/admin/attendances/",
           "method": "post"
         }
       ]
@@ -28,35 +28,35 @@
           "description": "Creates a new employee",
           "link": "employees/creates_a_new_employee.json",
           "groups": "all",
-          "route": "/employees",
+          "route": "/admin/employees",
           "method": "post"
         },
         {
           "description": "Removes an employee data",
           "link": "employees/removes_an_employee_data.json",
           "groups": "all",
-          "route": "/employees/:id",
+          "route": "/admin/employees/:id",
           "method": "delete"
         },
         {
           "description": "Returns all the employees on the company",
           "link": "employees/returns_all_the_employees_on_the_company.json",
           "groups": "all",
-          "route": "/employees",
+          "route": "/admin/employees",
           "method": "get"
         },
         {
           "description": "Shows the detail of an employee",
           "link": "employees/shows_the_detail_of_an_employee.json",
           "groups": "all",
-          "route": "/employees/:id",
+          "route": "/admin/employees/:id",
           "method": "get"
         },
         {
           "description": "Updates the employee data",
           "link": "employees/updates_the_employee_data.json",
           "groups": "all",
-          "route": "/employees/:id",
+          "route": "/admin/employees/:id",
           "method": "put"
         }
       ]

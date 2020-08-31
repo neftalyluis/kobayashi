@@ -2,7 +2,7 @@
   "resource": "Employees",
   "resource_explanation": "General information for Employees",
   "http_method": "POST",
-  "route": "/employees",
+  "route": "/admin/employees",
   "description": "Creates a new employee",
   "explanation": null,
   "parameters": [
@@ -41,8 +41,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/employees",
-      "request_body": "{\"employee\":{\"first_name\":\"Ashley\",\"last_name\":\"Osinski\",\"position\":\"carpenter\",\"date_of_birth\":\"1967-01-17\",\"employment_date\":\"2019-10-05\"}}",
+      "request_path": "/admin/employees",
+      "request_body": "{\"employee\":{\"first_name\":\"Leonardo\",\"last_name\":\"Kassulke\",\"position\":\"designer\",\"date_of_birth\":\"1957-01-01\",\"employment_date\":\"2020-08-02\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -52,7 +52,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\"employee\":{\"id\":27,\"first_name\":\"Ashley\",\"last_name\":\"Osinski\",\"position\":\"carpenter\",\"date_of_birth\":\"1967-01-17\",\"employment_date\":\"2019-10-05\",\"created_at\":\"2020-08-31T03:00:40.954Z\",\"updated_at\":\"2020-08-31T03:00:40.954Z\"}}",
+      "response_body": "{\"employee\":{\"id\":27,\"first_name\":\"Leonardo\",\"last_name\":\"Kassulke\",\"position\":\"designer\",\"date_of_birth\":\"1957-01-01\",\"employment_date\":\"2020-08-02\",\"created_at\":\"2020-08-31T04:52:59.954Z\",\"updated_at\":\"2020-08-31T04:52:59.954Z\"}}",
       "response_headers": {
   "X-Frame-Options": "SAMEORIGIN",
   "X-XSS-Protection": "1; mode=block",
@@ -61,14 +61,14 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"cae9df6fdb1ac97844ebb9ea95d5b823\"",
+  "ETag": "W/\"6bff8e59e04f8cc577d234d6bebcaae8\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "fcf2dcf8-f24b-46df-8e6f-eba9710e0e4b",
-  "X-Runtime": "0.002462",
-  "Content-Length": "229"
+  "X-Request-Id": "6ea15d96-7068-4341-903d-6db09edb034d",
+  "X-Runtime": "0.003156",
+  "Content-Length": "231"
 },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees\" -d '{\"employee\":{\"first_name\":\"Ashley\",\"last_name\":\"Osinski\",\"position\":\"carpenter\",\"date_of_birth\":\"1967-01-17\",\"employment_date\":\"2019-10-05\"}}' -X POST \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"https://kobayashi-hr.herokuapp.com/admin/employees\" -d '{\"employee\":{\"first_name\":\"Leonardo\",\"last_name\":\"Kassulke\",\"position\":\"designer\",\"date_of_birth\":\"1957-01-01\",\"employment_date\":\"2020-08-02\"}}' -X POST \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }
