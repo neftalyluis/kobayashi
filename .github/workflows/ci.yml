@@ -22,11 +22,6 @@ jobs:
       postgres:
         # Docker Hub image
         image: postgres
-        # Provide the password for postgres
-        env:
-          POSTGRES_USER: kobayashi
-          POSTGRES_DB: kobayashi_test
-          POSTGRES_PASSWORD: ""
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
@@ -43,7 +38,7 @@ jobs:
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
     # uses: ruby/setup-ruby@v1
-      uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7.1
     - name: Install dependencies
@@ -51,8 +46,6 @@ jobs:
     - name: Setup database
       env:
         RAILS_ENV: test
-        PGHOST: localhost
-        PGUSER: kobayashi
       run: bundle exec rake db:setup
     - name: Run tests
       run: bundle exec rspec
