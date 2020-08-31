@@ -59,6 +59,7 @@ test:
   <<: *default
   database: kobayashi_test
   host: <%= ENV["POSTGRES_HOST"] %>
+  port: <%= ENV["POSTGRES_PORT"] %>
   username: <%= ENV["POSTGRES_USER"] %>
   password: <%= ENV["POSTGRES_PASSWORD"] %>
 
