@@ -36,8 +36,8 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Cache-Control": "no-cache",
-  "X-Request-Id": "84d13b59-d512-4a2e-a20b-69cc0a6f5a4e",
-  "X-Runtime": "0.003572"
+  "X-Request-Id": "0d2c71b1-e56c-4b1a-9763-acf8700045ae",
+  "X-Runtime": "0.002068"
 },
       "response_content_type": null,
       "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees/29\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

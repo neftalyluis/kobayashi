@@ -101,9 +101,41 @@ end
 require "rspec_api_documentation"
 require "rspec_api_documentation/dsl"
 
+module RspecApiDocumentation
+  class RackTestClient < ClientBase
+    def response_body
+      body = last_response.body
+      if body.empty? || last_response.headers['Content-Type'].include?('json')
+        body.encode('utf-8')
+      else
+        '"[binary data]"'
+      end
+    rescue Encoding::UndefinedConversionError
+      '"[binary data]"'
+    end
+  end
+end
+
 RspecApiDocumentation.configure do |config|
   config.format = :json
   config.curl_host = "https://kobayashi-hr.herokuapp.com"
   config.api_name = "Kobayashi API"
   config.api_explanation = "A simple HR REST API to check employees and attendances"
+
+  # Change how the response body is formatted by default
+  # Is proc that will be called with the response_content_type & response_body
+  # by default response_content_type of `application/json` are pretty formated.
+  config.response_body_formatter = lambda do |response_content_type, response_body|
+    if response_content_type.include?('application/json')
+      JSON.parse(response_body)
+      return response_body
+    elsif response_content_type.include?('text') || response_content_type.include?('txt')
+      # quote it for JSON Parser in documentation reader like APITOME
+      return "\"#{response_body}\""
+    else
+      return '"[binary data]"'
+    end
+  rescue JSON::ParseError
+    '"[binary data]"'
+  end
 end

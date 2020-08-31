@@ -29,8 +29,8 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Cache-Control": "no-cache",
-  "X-Request-Id": "38cb6212-e659-4ff3-826e-8184fb1a554e",
-  "X-Runtime": "0.008684"
+  "X-Request-Id": "e0b4c801-b583-40f4-bcf7-bed8fcd72dae",
+  "X-Runtime": "0.004724"
 },
       "response_content_type": null,
       "curl": "curl -g \"https://kobayashi-hr.herokuapp.com/attendances/\" -X GET \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""

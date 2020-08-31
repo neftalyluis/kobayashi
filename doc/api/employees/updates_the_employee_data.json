@@ -52,7 +52,7 @@
     {
       "request_method": "PUT",
       "request_path": "/employees/28",
-      "request_body": "{\"employee\":{\"first_name\":\"Richard\",\"last_name\":\"Macejkovic\",\"position\":\"scientist\",\"date_of_birth\":\"1999-11-29\",\"employment_date\":\"2020-05-09\"}}",
+      "request_body": "{\"employee\":{\"first_name\":\"Byron\",\"last_name\":\"Ebert\",\"position\":\"newsreader\",\"date_of_birth\":\"1960-01-22\",\"employment_date\":\"2020-02-07\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -62,7 +62,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"employee\": {\n    \"id\": 28,\n    \"first_name\": \"Richard\",\n    \"last_name\": \"Macejkovic\",\n    \"position\": \"scientist\",\n    \"date_of_birth\": \"1999-11-29\",\n    \"employment_date\": \"2020-05-09\",\n    \"created_at\": \"2020-08-07T03:17:06.343Z\",\n    \"updated_at\": \"2020-08-07T03:17:06.348Z\"\n  }\n}",
+      "response_body": "{\"employee\":{\"id\":28,\"first_name\":\"Byron\",\"last_name\":\"Ebert\",\"position\":\"newsreader\",\"date_of_birth\":\"1960-01-22\",\"employment_date\":\"2020-02-07\",\"created_at\":\"2020-08-31T03:00:40.958Z\",\"updated_at\":\"2020-08-31T03:00:40.961Z\"}}",
       "response_headers": {
   "X-Frame-Options": "SAMEORIGIN",
   "X-XSS-Protection": "1; mode=block",
@@ -71,14 +71,14 @@
   "X-Permitted-Cross-Domain-Policies": "none",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Content-Type": "application/json; charset=utf-8",
-  "ETag": "W/\"33e4018cbf7db9a992c573fac15338b0\"",
+  "ETag": "W/\"3c36f32f1fa84ea1c8480f3ddee5c4d6\"",
   "Cache-Control": "max-age=0, private, must-revalidate",
-  "X-Request-Id": "7f653caa-32c4-476b-bf46-5cba360f9304",
-  "X-Runtime": "0.017016",
-  "Content-Length": "233"
+  "X-Request-Id": "63a5e471-1a8e-4ff5-8857-dbeb8db48a5b",
+  "X-Runtime": "0.002902",
+  "Content-Length": "227"
 },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees/28\" -d '{\"employee\":{\"first_name\":\"Richard\",\"last_name\":\"Macejkovic\",\"position\":\"scientist\",\"date_of_birth\":\"1999-11-29\",\"employment_date\":\"2020-05-09\"}}' -X PUT \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"https://kobayashi-hr.herokuapp.com/employees/28\" -d '{\"employee\":{\"first_name\":\"Byron\",\"last_name\":\"Ebert\",\"position\":\"newsreader\",\"date_of_birth\":\"1960-01-22\",\"employment_date\":\"2020-02-07\"}}' -X PUT \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }
