@@ -11,7 +11,7 @@ gem "bootsnap", ">= 1.1.0", require: false
 gem "interactor-rails"
 gem "kaminari"
 gem "oj", "~> 3"
-gem "puma", "~> 4.3"
+gem "puma", "~> 5.0"
 gem "rack"
 gem "apitome"
 
