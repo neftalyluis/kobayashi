@@ -87,7 +87,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.13.0)
       i18n (>= 1.6, < 2)
-    ffi (1.13.1)
+    ffi (1.14.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.5)
@@ -110,7 +110,7 @@ GEM
     kaminari-core (1.2.1)
     kramdown (2.3.0)
       rexml
-    listen (3.2.1)
+    listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.7.0)
@@ -272,7 +272,7 @@ DEPENDENCIES
   faker
   interactor-rails
   kaminari
-  listen (>= 3.0.5, < 3.3)
+  listen (>= 3.0.5, < 3.5)
   oj (~> 3)
   pg (>= 0.18, < 2.0)
   pry
